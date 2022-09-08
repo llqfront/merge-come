@@ -14,7 +14,7 @@ module.exports = appInfo => {
 
   // use for cookie sign key, should change to your own and keep security
   config.keys = appInfo.name + '_1662601071288_714';
-  
+
   config.mysql = {
     clients: {
       // clientId, 获取client实例，需要通过 app.mysql.get('clientId') 获取
@@ -26,7 +26,7 @@ module.exports = appInfo => {
         // 用户名
         user: 'root',
         // 密码
-        password: '密码',
+        password: 'dsafasfasd',
         // 数据库名
         database: '数据库名',
       },
