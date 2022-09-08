@@ -89,7 +89,8 @@ npm-debug.log
 testem.log
 /typings
 # e2e
-*/config/config.default.js
+*/config/*.js
+config/*.js
 /e2e/*.js
 /e2e/*.map
 # System Files
