@@ -9,14 +9,14 @@ step2
 
 docker build -t mergedocker .
 
->>>
+
 docker build -t lgon .
 docker save -o lgon.tar lgon:latest
 ls
 lgon.tar
 //后面这个.一定要记得加
 docker load -i lgon.tar
->>>
+
 
 step3
 
