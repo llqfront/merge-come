@@ -2,13 +2,14 @@ import hydrate from "ultra/hydrate.js";
 import App from "./src/app.tsx";
 
 // React Router
-import { BrowserRouter } from "react-router-dom";
-
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { routes } from "./router/index.tsx";
+let router = createBrowserRouter(routes);
 function ClientApp() {
   return (
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <React.StrictMode>
+        <RouterProvider router={router} fallbackElement={null} />
+    </React.StrictMode>
   );
 }
 
