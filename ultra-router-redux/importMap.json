@@ -9,11 +9,14 @@
     "react-router-dom": "https://esm.sh/react-router-dom@6.3.0?external=react",
     "react/": "https://esm.sh/react@18.2.0/",
     "react": "https://esm.sh/react@18.2.0?dev",
-    "@reduxjs/toolkit": "https://esm.sh/v108/*@reduxjs/toolkit@1.9.3"
+    "@reduxjs/toolkit": "https://esm.sh/v108/*@reduxjs/toolkit@1.9.3",
+    "@reduxjs/toolkit/": "https://esm.sh/v108/*@reduxjs/toolkit@1.9.3/",
+    "react-redux": "https://esm.sh/v108/react-redux@8.0.5"
   },
   "scopes": {
     "https://esm.sh/v108/": {
       "immer": "https://esm.sh/v108/immer@9.0.19",
+      "react-is": "https://esm.sh/v108/react-is@16.13.1",
       "redux-thunk": "https://esm.sh/v108/redux-thunk@2.4.2",
       "redux": "https://esm.sh/v108/redux@4.2.1",
       "reselect": "https://esm.sh/v108/reselect@4.1.7"
