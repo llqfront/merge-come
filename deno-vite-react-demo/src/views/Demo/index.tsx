@@ -8,7 +8,6 @@ const View: React.FC = (props) => {
     <React.Fragment>
         <div>dsaf运{count}营sdfa</div>
     </React.Fragment>
-
   )
 }
 export default View;
