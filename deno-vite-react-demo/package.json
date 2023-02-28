@@ -1,5 +1,5 @@
 {
-  "name": "deno-vite-react",
+  "name": "deno-vite-react-demo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -15,6 +15,7 @@
     "express": "^4.18.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.2",
     "sirv": "^2.0.2"
   },
   "devDependencies": {
