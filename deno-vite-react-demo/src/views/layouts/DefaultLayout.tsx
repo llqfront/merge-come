@@ -6,6 +6,7 @@ export function DefaultLayout() {
       <nav style={{ display: "flex", gap: "8px" }}>
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
+        <Link to="/demo">demo</Link>
         <Link to="/404">404</Link>
       </nav>
       <main>

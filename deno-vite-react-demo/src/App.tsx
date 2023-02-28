@@ -35,12 +35,17 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Router from "./router.tsx";
+import { Provider } from 'react-redux'
+import { setupStore } from './stores'
+const store = setupStore()
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <Router/>
+      <Provider store={store}>
+        <Router/>
+      </Provider>
   )
 }
 
-export default App
+export default App;
