@@ -1,13 +1,13 @@
 import { combineReducers } from '@reduxjs/toolkit'
-import counterSlice from './counter/counterSlice';
+import counterSlice from './counter/counterSlice.ts';
 import { setupListeners } from '@reduxjs/toolkit/query'
-import { pokemonApi } from '@/services/pokemon'
-import { todoApi } from '@/services/todo'
+// import { pokemonApi } from '~/services/pokemon'
+// import { todoApi } from '@~/services/todo'
 
 const rootReducer = combineReducers({
   counter: counterSlice.reducer,
-  [pokemonApi.reducerPath]: pokemonApi.reducer,
-  [todoApi.reducerPath]: todoApi.reducer,
+  // [pokemonApi.reducerPath]: pokemonApi.reducer,
+  // [todoApi.reducerPath]: todoApi.reducer,
 })
 
 export default rootReducer;

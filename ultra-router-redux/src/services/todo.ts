@@ -1,6 +1,6 @@
 // Need to use the React-specific entry point to import createApi
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import type { Pokemon } from './types'
+import type { Pokemon } from './types.ts'
 // Define a service using a base URL and expected endpoints
 /****
  * https://blog.csdn.net/weixin_45625609/article/details/126371290
