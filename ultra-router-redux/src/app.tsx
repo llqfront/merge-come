@@ -1,8 +1,5 @@
 import useAsset from "ultra/hooks/use-asset.js";
 import Router from "./router.tsx";
-import { Provider } from 'react-redux';
-import { setupStore } from './stores/index.ts';
-const store = setupStore();
 export default function App() {
   console.log("Hello world!");
   return (
@@ -15,7 +12,7 @@ export default function App() {
         <link rel="stylesheet" href={useAsset("/style.css")} />
       </head>
       <body>
-            <Router/>
+        <Router/>
       </body>
     </html>
   );

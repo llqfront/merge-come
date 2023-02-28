@@ -1,6 +1,8 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-
+import { Provider } from 'react-redux';
+import { setupStore } from './stores/index.ts';
+const store = setupStore();
 import useServerContext from "ultra/hooks/use-server-context.js";
 import { DefaultLayout } from "./layouts/DefaultLayout.tsx";
 const HomePage = lazy(() => import("./pages/Home/index.tsx"));
@@ -16,6 +18,7 @@ function RouteNotFound() {
 
 export default function Router() {
     return(
+        <Provider store={store}>
         <Suspense fallback={<div>Page is Loading...</div>}>
           <Routes>
             <Route path="/" element={<DefaultLayout />}>
@@ -26,5 +29,6 @@ export default function Router() {
             </Route>
           </Routes>
         </Suspense>
+        </Provider>
     )
 }
