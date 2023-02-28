@@ -9,11 +9,5 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
-    },
-  "http_proxy":{
-      "/api": {
-          "target": "https://api.xhanglu.com/",
-          "changeOrigin": true
-        }
-  }
+    }
 }

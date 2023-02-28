@@ -1,8 +1,8 @@
 import { Head } from "$fresh/runtime.ts";
 import { useContext } from "preact/hooks";
-import {  AppState, createAppState } from "../../stores/index.ts";
+import {  AppState, createAppState } from "~/stores/index.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
-
+import { Com } from "~/components/Pub.tsx";
 interface User {
   login: string;
   name: string;
@@ -22,15 +22,23 @@ export const handler: Handlers<User | null> = {
   },
 };
 export default function Home({ data }: PageProps<User | null>) {
-    // const state = useContext(AppState);
-    // console.log(state.todos)
+    const state = useContext(AppState);
+    const renderList = () => {
+        return state.todos.value.map((item,index)=>{
+            return (
+                <li key={index}>{item.text}</li>
+            )
+        })
+    }
     if (!data) {
     return <h1>User not found</h1>;
   }
-  console.log(data)
+  // console.log(state?.todos)
   return (
     <>
     <div>
+    333
+    <Com/>
     test
     <img src={data.avatar_url} width={64} height={64} />
     <h1>{data.name}</h1>

@@ -1,17 +1,20 @@
 import { Head } from "$fresh/runtime.ts";
+import { useState,useContext,useEffect } from "preact/hooks";
+import Test from "~/islands/Test.tsx";
+import {  AppState, createAppState } from "~/stores/index.ts";
+// import { signal, computed, effect } from "@preact/signals-core";
+import { Com } from "~/components/Pub.tsx";
+export default function Home() {
 
-import {  AppState, createAppState } from "../../stores/index.ts";
-import { useSignal, useComputed } from "@preact/signals";
-import { signal, computed, effect } from "@preact/signals-core";
-
-export default function Home(data) {
-    const { todos, completed } = createAppState();
-console.log(data)
+    const state = useContext(AppState);
   return (
     <>
-      <div>home
+      <div>
+
+        signal--{state.completed.value}----
+        <Test/>
       </div>
-333333
+      <Com/>
     </>
   );
 }
