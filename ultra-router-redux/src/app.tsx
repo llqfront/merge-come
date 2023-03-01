@@ -12,7 +12,7 @@ export default function App() {
         <link rel="stylesheet" href={useAsset("/style.css")} />
       </head>
       <body>
-        <RootApp/>
+        <RootApp />
       </body>
     </html>
   );
