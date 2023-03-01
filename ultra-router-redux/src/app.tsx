@@ -1,7 +1,7 @@
 import useAsset from "ultra/hooks/use-asset.js";
 import Router from "./router.tsx";
 export default function App() {
-  console.log("Hello world!");
+  // console.log("Hello world!");
   return (
     <html lang="en">
       <head>

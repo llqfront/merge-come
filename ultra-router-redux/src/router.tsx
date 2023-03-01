@@ -19,16 +19,16 @@ function RouteNotFound() {
 export default function Router() {
     return(
         <Provider store={store}>
-        <Suspense fallback={<div>Page is Loading...</div>}>
-          <Routes>
-            <Route path="/" element={<DefaultLayout />}>
-              <Route index element={<HomePage />} />
-              <Route path="about" element={<AboutPage />} />
-              <Route path="demo" element={<DemoPage />} />
-              <Route path="*" element={<RouteNotFound />} />
-            </Route>
-          </Routes>
-        </Suspense>
+            <Suspense fallback={<div>Page is Loading...</div>}>
+              <Routes>
+                <Route path="/" element={<DefaultLayout />}>
+                  <Route index element={<HomePage />} />
+                  <Route path="about" element={<AboutPage />} />
+                  <Route path="demo" element={<DemoPage />} />
+                  <Route path="*" element={<RouteNotFound />} />
+                </Route>
+              </Routes>
+            </Suspense>
         </Provider>
     )
 }
