@@ -1,5 +1,5 @@
 import useAsset from "ultra/hooks/use-asset.js";
-import Router from "./router.tsx";
+import RootApp from "./rootApp.tsx";
 export default function App() {
   // console.log("Hello world!");
   return (
@@ -12,7 +12,7 @@ export default function App() {
         <link rel="stylesheet" href={useAsset("/style.css")} />
       </head>
       <body>
-        <Router/>
+        <RootApp/>
       </body>
     </html>
   );
