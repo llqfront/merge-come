@@ -1,6 +1,6 @@
 import type { RootState } from '~/stores/index.ts';
 import { useSelector, useDispatch } from 'react-redux';
-import { counterSlice } from '~/src/features/actions.ts';
+import { counterSlice } from '../../features/actions.ts';
 
 export default function Page() {
     const count = useSelector((state: RootState) => state.counter.value)
